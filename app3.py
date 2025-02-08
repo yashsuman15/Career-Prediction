@@ -1,6 +1,6 @@
 import streamlit as st
 import pandas as pd
-import joblib
+
 import pickle
 from scipy import sparse
 import plotly.graph_objects as go
@@ -104,7 +104,7 @@ def generate_ai_career_insights(prediction, skills_scores, academic_scores):
 # Load the model and preprocessing components
 @st.cache_resource
 def load_model():
-    model = joblib.load('final_model.pkl')
+    model = pickle.load('final_model.pkl')
     with open('encoder.pkl', 'rb') as f:
         encoder = pickle.load(f)
     with open('scaler.pkl', 'rb') as f:
