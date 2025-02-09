@@ -1,10 +1,8 @@
 import streamlit as st
-import numpy as np
 import pandas as pd
 import joblib
 import pickle
 from scipy import sparse
-from sklearn.preprocessing import StandardScaler, OneHotEncoder
 
 CRM_Managerial_Roles = ['CRM Business Analyst','CRM Technical Developer','Project Manager','Information Technology Manager']
 Analyst = ['Business Systems Analyst','Business Intelligence Analyst','E-Commerce Analyst']

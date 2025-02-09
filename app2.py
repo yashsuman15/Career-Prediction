@@ -1,13 +1,10 @@
 import streamlit as st
-import numpy as np
 import pandas as pd
 import joblib
 import pickle
 from scipy import sparse
-from sklearn.preprocessing import StandardScaler, OneHotEncoder
 import plotly.graph_objects as go
 import plotly.express as px
-import plotly.figure_factory as ff
 
 # Configuration
 st.set_page_config(
